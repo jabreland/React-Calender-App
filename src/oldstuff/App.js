@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import Day from '../Day';
 import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+
+//const Place =(<h1>Hi</h1>);
 
 class App extends Component {
   render() {
@@ -19,7 +22,9 @@ class App extends Component {
           >
             Learn React
           </a>
+          
         </header>
+        <Day/>
       </div>
     );
   }
