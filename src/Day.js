@@ -1,12 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Day extends Component{
-   render() {
-        return (
-            <div>
-                <h1>{this.props.day}</h1>
-            </div>
-        );
+function Day(dayNumber) {
+    if (dayNumber == 0) {
+        return ("");
+    }
+    else {
+        return (dayNumber);
     }
 }
-export default Day;
+
+export function Week(props) {
+    var week = [0];
+    props.days.forEach(element => {
+        week.push(element);
+    });
+    return (week.map(day => <div>{Day(day)}</div>));
+}

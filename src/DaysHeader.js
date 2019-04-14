@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 
+
 function DaysHeader(props){
-    var daysNames = ["Saturday", 
+    var daysNames = ["Sunday", 
                         "Monday", 
                         "Tuesday", 
                         "Wednesday", 
@@ -9,9 +10,9 @@ function DaysHeader(props){
                         "Friday", 
                         "Saturday"];
 
-    return(<div className="daysNames">
-        <div>{daysNames.map(day=>(<div>day</div>))}</div>
-    </div>);
+    return(
+        daysNames.map(day=>(<div className={"dayName" + day} >{day}</div>))
+    );
 }
 
 export default DaysHeader;

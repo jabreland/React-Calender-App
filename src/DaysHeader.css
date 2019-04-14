@@ -1,0 +1,58 @@
+body{
+
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.dayNames{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: 20px repeat(5, 100px);
+    border: 2px solid red ;
+    position: absolute;
+    width: 90%;
+    margin: 10px;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.dayNameSunday{
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid red;
+}
+
+.dayNameMonday{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.dayNameTuesday{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.dayNameWednesday{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.dayNameThursday{
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.dayNameFriday{
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.dayNameSaturday{
+    grid-column: 8;
+    grid-row: 1;
+}
+
+
